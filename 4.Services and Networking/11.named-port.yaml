@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-2
+  labels:
+    run: nginx2
+spec:
+  containers:
+  - image: nginx
+    name: pod
+    ports:
+    - containerPort: 80
+      name: custom-http
